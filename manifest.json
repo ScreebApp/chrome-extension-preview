@@ -1,0 +1,19 @@
+{
+    "name": "Screeb preview",
+    "description": "Add the screeb widget to current pages",
+    "version": "0.1",
+    "manifest_version": 2,
+    "permissions": [
+        "*://*/*",
+        "activeTab"
+    ],
+    "content_scripts": [{
+        "matches": ["*://*/*"],
+        "js": ["contentscript.js"]
+    }],
+    "icons": {
+        "32": "icon-32.png",
+        "128": "icon-128.png",
+        "400": "icon.png"
+    }
+}
